@@ -1,4 +1,4 @@
-console.log("Test");
+
 
 const button = document.getElementById('flip-btn');
 const image = document.getElementById('coin');
@@ -28,8 +28,6 @@ function flip(){
     if (chosen){
         state = Math.round(Math.random())
         image.src = states[state];
-        console.log(state + ", " + picked)
-        console.log("it was: " + names[state] + ", you picked: " + names[picked])
         if (picked == state) {
             tag.innerHTML = names[state] + ": You Win";
         }
